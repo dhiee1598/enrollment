@@ -32,7 +32,7 @@ class myDataBase
             } else {
                 return true;
             }
-        } catch (mysqli_sql_exception) {
+        } catch (mysqli_sql_exception $e) {
             echo "FAILED TO CONNECT TO DATABASE";
         }
     }
