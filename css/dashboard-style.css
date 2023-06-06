@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #333;
+}
+/******************* HEADER SECTION **********************/
+.header-top {
+  width: 100%;
+  min-height: 10vh;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 5px black;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.main-title {
+  display: flex;
+}
+.main-title h1 {
+  margin-left: 15px;
+  color: white;
+  font-size: 35px;
+  font-weight: 100;
+}
+.main-title img {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 40px;
+}
+.top-bar {
+  margin-right: 30px;
+}
+.top-bar p {
+  display: inline-block;
+  margin-right: 30px;
+  color: white;
+  font-weight: 300;
+}
+.top-bar a {
+  padding: 5px 15px 5px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  background: rgb(21, 116, 157);
+  transition: 0.5s;
+}
+.top-bar a:hover {
+  opacity: 0.7;
+}
+.header-side {
+  width: 260px;
+  height: 100vh;
+  background: #111;
+  padding: 15vh 15px;
+  box-shadow: 3px 0px 5px black;
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.header-side p {
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px white;
+}
+.header-side ul {
+  list-style: none;
+}
+.header-side ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.header-side ul li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
+.header-side ul li a {
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  transition: 0.5s;
+}
+.header-side ul li a:hover {
+  background: #ffff;
+  color: black;
+  font-weight: 500;
+}
+/***************** END HEADER SECTION ********************/
+
+/***************** CONTAINER SECTION ********************/
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+  padding-left: 260px;
+}
+/*************** END CONTAINER SECTION ******************/
+
+/*************** EVERY SECTION ******************/
+.section-information {
+  width: 100%;
+  height: 100%;
+  padding: 15px 30px;
+}
+.section-title h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 3px white;
+}
+.search-bar {
+  border: 1px solid black;
+  float: right;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 30px;
+  background: black;
+
+  margin-right: 60px;
+}
+.search-bar img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  filter: brightness(0) invert(1);
+}
+.search-bar form input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+.search-bar form button {
+  height: 30px;
+  width: 80px;
+  font-size: 16px;
+  margin-left: -2px;
+  cursor: pointer;
+}
+.search-bar form button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.search-bar a {
+  color: black;
+  background: rgb(235, 235, 235);
+  padding: 2.7px 10px;
+  text-decoration: none;
+  border-radius: 0px 5px 5px 0px;
+  margin-right: 5px;
+}
+.search-bar a:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-weight: 100;
+}
+.table {
+  margin: 80px auto;
+  width: 900px;
+  height: 350px;
+  overflow-y: auto;
+}
+
+.table table {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.table table,
+th,
+td {
+  text-align: start;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 15px;
+}
+
+.table table th,
+.table-subject th {
+  font-size: 16px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.511);
+}
+.table table th:nth-child(1) {
+  width: 70px;
+}
+.table table th:nth-child(2) {
+  width: 150px;
+}
+.table table th:nth-child(3) {
+  width: 200px;
+}
+.table table th:nth-child(4) {
+  width: 200px;
+}
+.table table th:nth-child(5) {
+  width: 200px;
+}
+
+.table table td,
+.table-subject table td {
+  background: rgba(255, 255, 255, 0.827);
+  height: 35px;
+  font-size: 13px;
+}
+.table table td a,
+.table-subject table td a {
+  color: white;
+  border: 1px solid black;
+  padding: 3px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.901);
+  transition: 0.5s;
+}
+.table table td a:nth-child(3):hover {
+  background-color: red;
+}
+.table table td a:nth-child(2):hover {
+  background-color: rgba(0, 128, 0, 0.893);
+}
+.table table td a:nth-child(1):hover {
+  background-color: blue;
+}
+.table a,
+.table-subject a {
+  border: 1px solid black;
+  padding: 5px 25px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: gray;
+}
+.table a:hover,
+.table-subject a:hover {
+  background-color: black;
+}
+/* TABLE SUBJECT */
+.table-subject {
+  margin: 80px auto;
+  width: 1000px;
+  height: 350px;
+  overflow-y: auto;
+}
+.table-subject table,
+th,
+td {
+  text-align: start;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 10px;
+}
+
+.table-subject table {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.table-subject table td a:nth-child(1):hover {
+  background-color: blue;
+}
+
+.table-subject table td a:nth-child(2):hover {
+  background-color: red;
+}
+.table-subject table th:nth-child(1) {
+  width: 40px;
+}
+.table-subject table th:nth-child(2) {
+  width: 100px;
+}
+.table-subject table th:nth-child(3) {
+  width: 80px;
+}
+.table-subject table th:nth-child(4) {
+  width: 230px;
+}
+.table-subject table th:nth-child(5) {
+  width: 130px;
+}
+.table-subject table th:nth-child(6) {
+  width: 120px;
+}
+
+.table-subject table th:nth-child(7) {
+  width: 150px;
+}
+.table-subject table th:nth-child(8) {
+  width: 150px;
+}
+/* END TABLE SUBJECT */
+
+/************* END EVERY SECTION ****************/
+
+/* FORM */
+.container-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: 1500;
+
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.523);
+}
+.form {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 600px;
+  height: 570px;
+  margin: 50px auto;
+  padding: 15px 50px;
+  box-shadow: 5px 5px 10px black;
+}
+.form-faculty {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 600px;
+  height: 500px;
+  margin: 50px auto;
+  padding: 15px 50px;
+  box-shadow: 5px 5px 10px black;
+}
+.form-subject {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  margin: 100px auto;
+  padding: 15px 50px;
+  box-shadow: 5px 5px 10px black;
+}
+.form-subject-update {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 600px;
+  height: 450px;
+  margin: 100px auto;
+  padding: 15px 50px;
+  box-shadow: 5px 5px 10px black;
+}
+.form-gradelvl {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 600px;
+  height: 300px;
+  margin: 150px auto;
+  padding: 15px 50px;
+  box-shadow: 5px 5px 10px black;
+}
+.form h1,
+.form-faculty h1,
+.form-gradelvl h1,
+.form-subject h1,
+.form-subject-update h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  text-align: center;
+}
+.form form input,
+.form-faculty form input,
+.form-gradelvl form input,
+.form-subject form input,
+.form-subject-update form input {
+  margin-bottom: 10px;
+  width: 250px;
+  height: 35px;
+  padding: 10px;
+}
+.form form label:nth-child(7) > input {
+  width: 35px;
+  height: 16px;
+}
+.form-subject form label:nth-child(3) > input,
+.form-subject-update form label:nth-child(3) > input {
+  width: 300px;
+}
+.form form button,
+.form-faculty button,
+.form-gradelvl button,
+.form-subject button,
+.form-subject-update button {
+  width: 100%;
+  height: 35px;
+  border-radius: 30px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  background: gray;
+  cursor: pointer;
+}
+.form form button:hover,
+.form-faculty form button:hover,
+.form-gradelvl form button:hover,
+.form-subject form button:hover,
+.form-subject-update form button:hover {
+  background-color: rgba(0, 0, 255, 0.733);
+}
+.form form a,
+.form-faculty form a,
+.form-gradelvl form a,
+.form-subject form a,
+.form-subject-update form a {
+  padding: 3px 230px;
+  border-radius: 35px;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background: gray;
+}
+.form form a:hover,
+.form-faculty form a:hover,
+.form-gradelvl form a:hover,
+.form-subject form a:hover,
+.form-subject-update form a:hover {
+  background-color: rgba(255, 0, 0, 0.768);
+}
+.form form select,
+.form-faculty form select,
+.form-gradelvl form select,
+.form-subject select,
+.form-subject-update select {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* END FORM */
+
+/* ALERT MESSAGE */
+.alert-success {
+  width: 250px;
+  height: 250px;
+  background: white;
+  margin: 150px auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px black;
+}
+.alert-success a {
+  margin-top: 30px;
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 35px;
+  color: black;
+  text-decoration: none;
+}
+.alert-success a:hover {
+  background: rgba(255, 0, 0, 0.905);
+  color: white;
+}
+.alert-warning {
+  width: 250px;
+  height: 250px;
+  background: white;
+  margin: 150px auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px black;
+}
+.alert-warning p {
+  margin-bottom: 35px;
+}
+.alert-warning a {
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 35px;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.alert-warning a:nth-of-type(1):hover {
+  background: green;
+}
+.alert-warning a:nth-of-type(2):hover {
+  background: red;
+}
+
+/************** VIEW SECTION *****************/
+.view {
+  background: rgb(118, 118, 118);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 1000px;
+  height: 570px;
+  margin: 50px auto;
+  padding: 15px 50px;
+  box-shadow: 5px 5px 10px black;
+}
+.view h1 {
+  border-bottom: 1px solid black;
+}
+.view h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.view-student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-info {
+  border: 1px solid black;
+  height: 320px;
+  width: 320px;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+}
+.student-info p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.student-sub {
+  border: 1px solid black;
+  height: 400px;
+  width: 550px;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+  overflow: auto;
+}
+.student-sub table {
+  border: 1px solid black;
+  height: 100px;
+  font-size: 14px;
+  text-align: left;
+}
+.teacher-sub {
+  border: 1px solid black;
+  height: 250px;
+  width: 550px;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+  overflow: auto;
+}
+.teacher-sub table {
+  border: 1px solid black;
+  height: 100px;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+.view a {
+  border: 1px solid black;
+  padding: 5px 25px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background: black;
+  float: right;
+  margin-top: 30px;
+}
+.view a:hover {
+  background-color: red;
+  color: black;
+}
+
+/************ END VIEW SECTION ***************/
+
+/************ SETTINGS SECTION ***************/
+.settings {
+  border: 1px solid white;
+  width: 700px;
+  height: 300px;
+  margin: 100px auto;
+  border-radius: 30px;
+  background: black;
+}
+.settings form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
+.settings form input {
+  width: 500px;
+  height: 35px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.settings form button {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+/************ END SETTINGS SECTION ***************/
+
+.home {
+  border: 1px solid white;
+  height: 400px;
+  width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: black;
+  color: white;
+  box-shadow: 5px 5px 10px white;
+}
+.home h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.enrolled {
+  margin-top: 15px;
+  padding: 15px 0;
+  text-decoration: underline;
+}
