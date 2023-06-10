@@ -15,9 +15,11 @@ if (!isset($_POST["submit"])) {
 
 
     $store = [$id, $fname, $mname, $lname, $address, $contact, $email];
+
     $mySQLFunction->connection();
     $mySQLFunction->insert("TEACHER", $store);
     $mySQLFunction->disconnect();
+    
     header("location:../index.php?page=faculty&success=newFacultyAdded");
     exit();
 }
