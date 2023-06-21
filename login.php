@@ -15,7 +15,7 @@
     ?>
     <div class="container">
         <form action="includes/login-inc.php" method="POST">
-            <h2>Admin Login</h2>
+            <h2>Login</h2>
 
             <div class="input-box">
                 <span class="icon">
