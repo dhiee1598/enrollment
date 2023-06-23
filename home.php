@@ -4,11 +4,9 @@ $mySQLFunction->connection();
 $numberOfStudent = $mySQLFunction->checkRowCount("ENROLL");
 $numberOfFaculty = $mySQLFunction->checkRowCount("TEACHER");
 $mySQLFunction->disconnect();
-
 ?>
-
 <div class="container">
-    <div class="home">
+   <div class="home">
         <h1>Welcome Back! Admin</h1>
         <?php
         date_default_timezone_set("Asia/Manila");
