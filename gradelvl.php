@@ -5,8 +5,8 @@ include "includes/include.php";
 <div class="container">
     <!--  STUDENT SECTION -->
     <div class="section-information">
-        <div class="section-title">
-            <h1>* List of Offer</h1>   
+       <div class="section-title">
+           <h1>* List of Offer</h1>   
     </div>
         <!-- SEARCH BAR -->
         <div class="search-bar">
