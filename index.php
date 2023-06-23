@@ -1,6 +1,6 @@
 <?php include "includes/header.php" ?>
 
-<php
+<?php
 if (isset($_GET["page"]) && $_GET["page"] == "home") {
     include "home.php";
 }
