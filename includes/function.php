@@ -33,10 +33,10 @@ class myDataBase
                 return true;
             }
         } catch (mysqli_sql_exception $e) {
-            echo "FAILED TO CONNECT TO DATABASE";
+            echo $e;
         }
     }
-
+      
     //  DATABASE DISCONNECTION FUNCTION
     public function disconnect()
     {
@@ -165,7 +165,6 @@ class myDataBase
 
             $sql = "SELECT * FROM `STUDENT` ORDER BY `STUDENT_LNAME`";
             $stored = ($this->con->query($sql))->fetch_all(MYSQLI_ASSOC);
-
             return $stored;
         }
     }
@@ -184,7 +183,6 @@ class myDataBase
         $result = ($this->con->query($sql))->fetch_all(MYSQLI_ASSOC);
         return $result;
     }
-
     // UPDATE STUDENT
     public function updateStudent($row, $value, $where)
     {
